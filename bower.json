@@ -1,0 +1,9 @@
+{
+  "name": "onrek",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.1",
+    "bootstrap": "~4.0.0",
+    "font-awesome": "~4.4.0"
+  }
+}
