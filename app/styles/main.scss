@@ -8,9 +8,9 @@ $brandingHeight : 80px;
 
 .mainheader  {
   height:100vh;
-  width:100%;
   background-image: url("../images/bg.jpg");
   background-size: cover;
+  padding: 1em;
   display:flex;
   flex-direction: column;
 }
@@ -20,6 +20,20 @@ $brandingHeight : 80px;
 	flex: 1;
 	justify-content:space-between;
 	align-items: flex-start;	
+}
+
+.logo {
+    text-align: center;
+    img {
+      display: block;
+      margin: 0 auto 0.4em auto;
+      max-width: 35%;
+      @include border-radius(6px);
+      box-shadow: 2px 2px 2px $gray;
+    }
+    h1 {
+      font-size: 1.1em;
+    }
 }
 
 .next {
@@ -55,7 +69,7 @@ $brandingHeight : 80px;
   position: relative;
   display:flex;
   border:0.6em solid rgba(0,0,0,0.3);
-  border-radius: 6px;
+  @include border-radius(6px);
 }
 
 .flex-form > * {
@@ -78,18 +92,57 @@ input[type="search"], select {
 }
 
 .section {
-	padding: 1em;
+	padding: 2em 0;
+}
+
+.nextformation {
+  background: $gray-lighter;
 }
 
 .grid {
 	display: flex;
 	justify-content:space-between;
 	> * {
-		flex: 1;
-		margin: 0.4em;
+		margin-right: 1em;
+    flex: 1;
+    &:last-child {
+      margin-right: 0;
+    }
 	}
 }
 
+.card {
+  background: #fff;
+}
+
+.card-block {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  > * {
+    flex: 0 1 auto;
+  }
+  .card-text {
+    flex-grow: 1;
+  }
+  .readmore {
+    flex-grow: 0;
+    align-self: flex-end;
+  }
+}
+
 .siteinfo {
-	background: $gray-lighter;
+	background: $gray;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+
+  > * {
+   flex-basis: 45%;
+  
+  }
 }
