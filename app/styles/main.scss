@@ -8,7 +8,6 @@
 
 $brandingHeight : 80px;
 
-
 // global
 
 .section {
@@ -80,8 +79,23 @@ $brandingHeight : 80px;
 
 .siteinfo {
   background: $gray-dark;
+  text-align: right;
   > * {
     color: $gray-lighter;
+  }
+
+  .list-site {
+    display: flex;
+    justify-content : flex-end;
+    li {
+      flex: 0;
+      margin-right: 1em;
+      text-align: center;
+
+      img {
+        @include border-radius(6px);
+      }
+    }
   }
 }
 

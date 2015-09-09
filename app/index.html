@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" ng-app="prototype">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -25,50 +25,8 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <header class="mainheader container-fluid" role="banner">
+    <header class="mainheader container-fluid" role="banner" ng-include="'templates/header.html'">
     
-      <div class="branding">
-        <div class="logo">
-          <img src="images/logo-onrek.jpg" alt="onrek">
-          <h1><span class="text-primary">O</span>ffice <span class="text-primary">N</span>ational de <br> <span class="text-primary">R</span>echerche et d'<span class="text-primary">E</span>nseignement <br> en <span class="text-primary">K</span>inésithérapie</h1>
-        </div>
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active"><i class="fa fa-home"></i> accueil</a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-suitcase"></i> formations</a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-user"></i> compte</a></li>
-        </ul>
-      </div>
-
-      <div class="cover">
-        <form class="flex-form">
-        
-          <input type="search" placeholder="Vous rechercher une formation ?">
-          
-          <label for="theme">En</label>
-          <select name="theme" id="theme">
-            <option value="Rennes">Culture médicale, psychologie</option>
-            <option value="Paris">Thérapie manuelle</option>
-            <option value="Bordeaux">thème 3</option>
-            <option value="Nantes">thème 4</option>
-            <option value="5">thème 5</option>
-          </select>
-        
-          <label for="where">À</label>        
-          <select name="where" id="where">
-            <option value="Rennes">Rennes</option>
-            <option value="Paris">Paris</option>
-            <option value="Bordeaux">Bordeaux</option>
-            <option value="Nantes">Nantes</option>
-          </select>
-        
-          <input type="submit" value="Rechercher">
-        
-        </form>
-      </div>
-
-      <div class="next">
-        <a href="#"><i class="fa fa-chevron-circle-down"></i></a>
-      </div>
 
     </header>
 
@@ -106,8 +64,13 @@
                     jeudi 03 septembre 2015
                   </small>
                 </p>
-
                 <h4 class="card-title">Titre de la formation</h4>
+                <p>
+                  <small class="text-muted">
+                    <i class="fa fa-map-marker"></i>
+                    Nantes
+                  </small>
+                </p>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="btn btn-primary readmore"><i class="fa fa-hand-o-right"></i> Détails</a>
               </div>
@@ -123,6 +86,12 @@
                 </p>
 
                 <h4 class="card-title">Titre de la formation</h4>
+                <p>
+                  <small class="text-muted">
+                    <i class="fa fa-map-marker"></i>
+                    Paris
+                  </small>
+                </p>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="btn btn-primary readmore"><i class="fa fa-hand-o-right"></i> Détails</a>
               </div>
@@ -136,8 +105,13 @@
                     jeudi 03 septembre 2015
                   </small>
                 </p>
-
                 <h4 class="card-title">Titre de la formation</h4>
+                <p>
+                  <small class="text-muted">
+                    <i class="fa fa-map-marker"></i>
+                    Bordeaux
+                  </small>
+                </p>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae veniam quis, quisquam commodi asperiores temporibus sit! Minus pariatur, facilis perspiciatis molestias explicabo quos corporis cum aspernatur aut, quidem quo nulla.</p>
                 <a href="#" class="btn btn-primary readmore"><i class="fa fa-hand-o-right"></i> Détails</a>
               </div>
@@ -148,10 +122,7 @@
       </div> <!-- /.nextformation --> 
     </main>
 
-    <footer class="siteinfo section">
-      <div class="container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae praesentium, odit asperiores repellat tenetur accusamus quam nam, obcaecati, provident, cum quidem? Dolores facilis ex eveniet eum. Laborum unde soluta saepe?</p>
-      </div>
+    <footer class="siteinfo section" ng-include="'templates/footer.html'">
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -167,6 +138,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -187,6 +159,10 @@
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/prototype.js -->
+        <script src="scripts/app.js"></script>
         <!-- endbuild -->
 </body>
 </html>
