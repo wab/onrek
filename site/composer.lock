@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0e100ab083900a4ce8ff168caca65efa",
-    "content-hash": "985df3f273c2950790dabdb5e011c30a",
+    "hash": "0571c1d2c27dd57bbf23d30681f2c18d",
+    "content-hash": "b525a96065e3a0aad79239d0ab5ecf1b",
     "packages": [
         {
             "name": "composer/installers",
@@ -316,6 +316,26 @@
             "homepage": "https://wordpress.org/plugins/groups/"
         },
         {
+            "name": "wpackagist-plugin/json-rest-api",
+            "version": "1.2.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/json-rest-api/",
+                "reference": "tags/1.2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/json-rest-api.1.2.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/json-rest-api/"
+        },
+        {
             "name": "wpackagist-plugin/types",
             "version": "1.8.5",
             "source": {
@@ -357,15 +377,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.3.4",
+            "version": "2.3.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.3.4"
+                "reference": "tags/2.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.5.zip",
                 "reference": null,
                 "shasum": null
             },

@@ -42,7 +42,8 @@
     "wpackagist-plugin/advanced-custom-fields": "^4.4",
     "wpackagist-plugin/wordpress-seo": "^2.3",
     "wpackagist-plugin/woocommerce": "^2.4",
-    "wpackagist-plugin/groups": "^1.7"
+    "wpackagist-plugin/groups": "^1.7",
+    "wpackagist-plugin/json-rest-api": "^1.1"
   },
   "extra": {
     "installer-paths": {
