@@ -13,6 +13,13 @@ add_theme_support('soil-nav-walker');       // Enable cleaner nav walker from So
 add_theme_support('soil-nice-search');      // Enable nice search from Soil
 add_theme_support('soil-jquery-cdn');       // Enable to load jQuery from the Google CDN
 
+ // Enable woocommerce theme
+add_action( 'after_setup_theme', __NAMESPACE__ . '\\woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+
 /**
  * Configuration values
  */
