@@ -22,6 +22,14 @@
     },
     "modernizr.js": {
       "bower": ["modernizr"]
+    },
+    "angular.js" : {
+      "bower": ["angular", "angular-route"]
+    },
+    "app.js" : {
+      "files": [
+        "scripts/app/**/*.js"
+      ]
     }
   },
   "config": {
