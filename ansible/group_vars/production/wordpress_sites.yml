@@ -1,8 +1,8 @@
 # Documentation: https://github.com/roots/trellis#wordpress-sites
 wordpress_sites:
-  example.com:
+  onrek.org:
     site_hosts:
-      - example.com
+      - onrek.org
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:roots/bedrock.git
     branch: master
@@ -17,8 +17,8 @@ wordpress_sites:
       duration: 30s
     system_cron: true
     env:
-      wp_home: http://example.com
-      wp_siteurl: http://example.com/wp
+      wp_home: http://onrek.org
+      wp_siteurl: http://onrek.org/wp
       wp_env: production
       db_name: example_prod
       db_user: example_dbuser

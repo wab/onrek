@@ -1,6 +1,6 @@
 # Documentation: https://github.com/roots/trellis#wordpress-sites
 wordpress_sites:
-  example.com:
+  onrek.org:
     site_hosts:
       - dev.onrek.org
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
