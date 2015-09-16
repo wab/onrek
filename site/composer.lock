@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "32766f7fba8c8e5813c65a6aaea0ff98",
+    "hash": "0e100ab083900a4ce8ff168caca65efa",
+    "content-hash": "985df3f273c2950790dabdb5e011c30a",
     "packages": [
         {
             "name": "composer/installers",
@@ -103,16 +104,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.3",
+            "version": "4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "2afe902599538caaa0f1fd7579895dd7cc0ac5f7"
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/2afe902599538caaa0f1fd7579895dd7cc0ac5f7",
-                "reference": "2afe902599538caaa0f1fd7579895dd7cc0ac5f7",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
                 "shasum": ""
             },
             "require": {
@@ -136,7 +137,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-08-18 18:16:11"
+            "time": "2015-09-15 15:01:23"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -316,15 +317,15 @@
         },
         {
             "name": "wpackagist-plugin/types",
-            "version": "1.8.3",
+            "version": "1.8.5",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/types/",
-                "reference": "tags/1.8.3"
+                "reference": "tags/1.8.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/types.1.8.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/types.1.8.5.zip",
                 "reference": null,
                 "shasum": null
             },
