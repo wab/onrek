@@ -1,6 +1,6 @@
 # Documentation: https://github.com/roots/trellis#wordpress-sites
 wordpress_sites:
-  example.com:
+  onrek.org:
     site_hosts:
       - dev.onrek.org
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
@@ -9,7 +9,7 @@ wordpress_sites:
     site_title: Example Site
     admin_user: admin
     admin_password: 5tc@WP
-    admin_email: admin@onrek.org
+    admin_email: wab2com@gmail.com
     multisite:
       enabled: false
       subdomains: false
